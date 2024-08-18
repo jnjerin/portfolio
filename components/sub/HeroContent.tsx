@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 import {sparklesIcon} from 
+import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
 
 
 const HeroContent = () => {

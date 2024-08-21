@@ -25,11 +25,11 @@ const StarBackground = (props: any) => {
         positions={sphere}
         stride={3}
         frustumCulled
-        {...props}
+        // {...props}
         >
             <PointMaterial
                 transparent
-                color="$fff"
+                color="#fff"
                 size={0.002}
                 sizeAttenuation={true}
                 dethWrite={false}

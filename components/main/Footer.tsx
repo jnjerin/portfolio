@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
 
             <div className="mb-[20px] text-[15px] text-center">
-                &copy; Joan Njeri Dev. All rights reserved
+                &copy; Joan Njeri. All rights reserved
             </div>
         </div>
     </div>

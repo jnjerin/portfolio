@@ -1,6 +1,6 @@
-import { Socials } from "@/constants/index"
 import Image from "next/image";
 import React from "react";
+// import { Socials } from "@/constants/index"
 
 const Navbar = () => {
   return (
@@ -36,7 +36,7 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-
+{/* 
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
             <Image
@@ -47,7 +47,7 @@ const Navbar = () => {
               height={24}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

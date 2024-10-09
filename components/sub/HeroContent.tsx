@@ -43,15 +43,16 @@ const HeroContent = () => {
                 Passionate fullstack developer crafting end-to-end web solutions. I specialize in building 
                 responsive and interactive user interfaces, developing robust backend systems, and implementing 
                 efficient DevOps practices. With expertise in cloud infrastructure and containerization, I ensure 
-                scalable and reliable deployments. I'm also skilled in integrating AI technologies to enhance web 
-                applications. From concept to execution, I'm dedicated to transforming ideas into cutting-edge, 
+                scalable and reliable deployments. I am also skilled in integrating AI technologies to enhance web 
+                applications. From concept to execution, I am dedicated to transforming ideas into cutting-edge, 
                 scalable digital experiences that make a real impact.
             </motion.p>
             <motion.a
-            variants={slideInFromLeft(1)}
-            className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w[200px]'
+                variants={slideInFromLeft(1)}
+                href="#contact"
+                className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w[200px]'
             >
-                Let's connect!
+                Connect with me!
             </motion.a>
         </div>
 

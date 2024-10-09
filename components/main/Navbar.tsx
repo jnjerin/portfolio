@@ -19,7 +19,7 @@ const Navbar = () => {
           /> */}
 
           <span className="font-bold ml-[100px] hidden md:block text-gray-300 text-xl">
-            Joan Njeri
+            Joan Njeri Ndegwa
           </span>
         </a>
 

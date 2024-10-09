@@ -18,7 +18,7 @@ const HeroContent = () => {
             variants={slideInFromTop}
             className='Welcome-box flex py-[8px] px-[9px] border border-[#7042f88b] opacity-[5]'
             >
-                <SparklesIcon className='text-[#b49bff] mr-[10px] h-5 w-5' />
+                {/* <SparklesIcon className='text-[#b49bff] mr-[10px] h-5 w-5' /> */}
                 <h1 className='Welcome-text text-[13px]'>
                     Fullstack Developer Portfolio
                 </h1>
@@ -29,9 +29,9 @@ const HeroContent = () => {
             className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'
             >
                 <span>
-                    Providing 
-                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> the best </span>
-                    project experience
+                    Fullstack Developer
+                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 text-[40px]'> Crafting Digital Experiences </span>
+                    
                 </span>
 
             </motion.div>
@@ -40,14 +40,18 @@ const HeroContent = () => {
             variants={slideInFromLeft(0.8)}
             className='text-lg text-gray-400 my-5 max-w-[600px]'
             >
-                I am a full stack software engineer with experience in website,
-                mobile and software development. Check out my project and skills
+                Passionate fullstack developer crafting end-to-end web solutions. I specialize in building 
+                responsive and interactive user interfaces, developing robust backend systems, and implementing 
+                efficient DevOps practices. With expertise in cloud infrastructure and containerization, I ensure 
+                scalable and reliable deployments. I'm also skilled in integrating AI technologies to enhance web 
+                applications. From concept to execution, I'm dedicated to transforming ideas into cutting-edge, 
+                scalable digital experiences that make a real impact.
             </motion.p>
             <motion.a
             variants={slideInFromLeft(1)}
             className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w[200px]'
             >
-                Learn More!
+                Let's connect!
             </motion.a>
         </div>
 

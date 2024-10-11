@@ -4,7 +4,6 @@ import React from 'react'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
-import { SparklesIcon } from '@heroicons/react/24/solid'
 
 const HeroContent = () => {
   return (
@@ -18,7 +17,6 @@ const HeroContent = () => {
             variants={slideInFromTop}
             className='Welcome-box flex py-[8px] px-[9px] border border-[#7042f88b] opacity-[5]'
             >
-                {/* <SparklesIcon className='text-[#b49bff] mr-[10px] h-5 w-5' /> */}
                 <h1 className='Welcome-text text-[13px]'>
                     Fullstack Developer Portfolio
                 </h1>

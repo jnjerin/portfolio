@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
+import ReactTypingEffect from 'react-typing-effect'
 
 const HeroContent = () => {
   return (
@@ -27,11 +28,27 @@ const HeroContent = () => {
             className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'
             >
                 <span>
-                    Fullstack Developer
-                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 text-[40px]'> Crafting Digital Experiences </span>
-                    
+                    <ReactTypingEffect
+                        text={["Fullstack Developer"]}
+                        cursorRenderer={cursor => <h1>{cursor}</h1>}
+                        displayTextRenderer={(text, i) => {
+                            return (
+                                <h1>
+                                    {text.split('').map((char, i) => {
+                                        const key = `${i}`
+                                        return (
+                                            <span
+                                                key={key}
+                                                className={i % 2 === 0 ? 'text-purple-500' : 'text-purple-500'}
+                                            >{char}</span>
+                                        )
+                                    })}
+                                </h1>
+                            )
+                        }}
+                    />
+                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 text-[40px] animate-gradient'> Crafting Digital Experiences </span>
                 </span>
-
             </motion.div>
 
             <motion.p
@@ -48,7 +65,7 @@ const HeroContent = () => {
             <motion.a
                 variants={slideInFromLeft(1)}
                 href="#contact"
-                className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w[200px]'
+                className='py-2 px-4 button-primary text-center text-white font-semibold cursor-pointer rounded-lg w-44 inline-block transition-all duration-300 ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-400'
             >
                 Connect with me!
             </motion.a>
@@ -64,9 +81,7 @@ const HeroContent = () => {
               height={650}
               width={650}
             />
-
         </motion.div>
-
     </motion.div>
   )
 }

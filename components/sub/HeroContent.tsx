@@ -28,25 +28,19 @@ const HeroContent = () => {
             className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto'
             >
                 <span>
-                    <ReactTypingEffect
-                        text={["Fullstack Developer"]}
-                        cursorRenderer={cursor => <h1>{cursor}</h1>}
-                        displayTextRenderer={(text, i) => {
-                            return (
-                                <h1>
-                                    {text.split('').map((char, i) => {
-                                        const key = `${i}`
-                                        return (
-                                            <span
-                                                key={key}
-                                                className={i % 2 === 0 ? 'text-purple-500' : 'text-purple-500'}
-                                            >{char}</span>
-                                        )
-                                    })}
-                                </h1>
-                            )
-                        }}
-                    />
+                <ReactTypingEffect
+                    text={["Fullstack Developer"]}
+                    typingDelay={1000}
+                    eraseDelay={2000}
+                    cursorClassName="cursor-custom"
+                    displayTextRenderer={(text: string, i: number) => {
+                        return (
+                        <h1 key={i}>
+                            {text}
+                        </h1>
+                        );
+                }}
+                />
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 text-[40px] animate-gradient'> Crafting Digital Experiences </span>
                 </span>
             </motion.div>

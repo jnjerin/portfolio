@@ -72,6 +72,13 @@
   display: none;
 }
 
+.cursor-custom {
+  display: inline-block;
+  width: 3px;
+  background-color: #000;
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+}
 
 
 html {

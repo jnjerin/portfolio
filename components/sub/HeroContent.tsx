@@ -29,10 +29,11 @@ const HeroContent = () => {
             >
                 <span>
                 <ReactTypingEffect
-                    text={["Fullstack Developer"]}
+                    text={["Hi, I'm Joan Njeri..."]}
                     typingDelay={1000}
                     eraseDelay={2000}
                     cursorClassName="cursor-custom"
+                    className='text-transparent font-extrabold text-7xl bg-clip-text bg-gradient-to-r from-purple-700 to-purple-500'
                     displayTextRenderer={(text: string, i: number) => {
                         return (
                         <h1 key={i}>

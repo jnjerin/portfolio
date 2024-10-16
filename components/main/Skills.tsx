@@ -16,9 +16,21 @@
         </motion.div>
 
         <motion.div variants={slideInFromLeft(0.5)} className="w-full h-auto flex flex-col items-center justify-center">
-          <h2 className="text-[30px] text-white font-bold">Frontend Development</h2>
-          <p className="text-[20px] text-gray-200 mb-10">Creating responsive and interactive user interfaces</p>
-          <div className="flex flex-row justify-start flex-wrap mt-4 gap-5 items-center max-w-[900px] mx-auto">
+        <div className="group">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700 mb-1 hover:scale-125 pb-2 relative">
+            Frontend Development
+            {/* <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-purple-700 mb-1 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span> */}
+          </h2>
+        </div>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="cursive text-lg text-gray-500 mb-8"
+          >
+            Creating responsive and interactive user interfaces
+          </motion.p>
+          <div className="flex flex-row justify-start flex-wrap mt-4 gap-5 items-start max-w-[900px] mx-auto">
             {Frontend_skill.map((skill, index) => (
               <SkillDataProvider
                 key={index}
@@ -32,9 +44,21 @@
           </div>
         </motion.div>
 
-        <motion.div variants={slideInFromRight(0.5)} className="w-full h-auto flex flex-col items-center justify-center mt-20"> 
-          <h2 className="text-[30px] text-white font-bold">Backend Development</h2>
-          <p className="text-[20px] text-gray-200 mb-10">Building robust and scalable server-side applications</p>
+        <motion.div variants={slideInFromRight(0.5)} className="w-full h-auto flex flex-col items-center justify-center mt-20">
+        <div className="group">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700 mb-1 hover:scale-125 pb-2 relative">
+            Backend Development
+            {/* <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-purple-700 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span> */}
+          </h2>
+        </div>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="cursive text-lg text-gray-500 mb-8"
+          >
+            Building robust and scalable server-side applications
+          </motion.p>
           <div className="flex flex-row justify-start flex-wrap mt-4 gap-5 items-start max-w-[900px] mx-auto">  
             {Backend_skill.map((skill, index) => (
               <SkillDataProvider
@@ -44,15 +68,26 @@
                 height={skill.height}
                 index={index}
                 name={skill.skill_name}
-
               />
             ))}
           </div>
         </motion.div>
 
         <motion.div variants={slideInFromLeft(0.5)} className="w-full h-auto flex flex-col items-center justify-center mt-20">
-          <h2 className="text-[30px] text-white font-bold">Full Stack & DevOps</h2>
-          <p className="text-[20px] text-gray-200 mb-10">Bridging frontend and backend, optimizing deployment processes</p>
+        <div className="group">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700 mb-1 hover:scale-125 pb-2 relative">
+            DevOps
+            {/* <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-purple-700 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100"></span> */}
+          </h2>
+        </div>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="cursive text-lg text-gray-500 mb-8"
+          >
+            Bridging frontend and backend, optimizing deployment processes
+          </motion.p>
           <div className="flex flex-row justify-start flex-wrap mt-4 gap-5 items-start max-w-[900px] mx-auto">
             {[...Full_stack, ...Other_skill].map((skill, index) => (
               <SkillDataProvider

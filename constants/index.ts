@@ -270,6 +270,18 @@ export const Full_stack = [
     width: 80,
     height: 80,
   },
+  {
+    skill_name: "Kubernetes",
+    Image: "/docker.webp",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Github",
+    Image: "/docker.webp",
+    width: 80,
+    height: 80,
+  },
 ];
 
 export const Other_skill = [

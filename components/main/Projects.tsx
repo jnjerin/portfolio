@@ -13,19 +13,31 @@ const Projects = () => {
       {/* <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10"> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-10">  
         <ProjectCard
-          src="/SpaceWebsite.png" 
-          title="Modern Next.js Portfolio" 
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/NextWebsite.png"
+          title="Modern Next.js Portfolio"
+          description="A sleek, responsive portfolio showcasing my web development projects and skills."
+          technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
+          demoLink="https://demo.com"
+          githubLink="https://github.com/username/repo"
+          index={0}
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Social Media app for devs"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/SpaceWebsite.png"
+          title="Modern Next.js Portfolio"
+          description="A sleek, responsive portfolio showcasing my web development projects and skills."
+          technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
+          demoLink="https://demo.com"
+          githubLink="https://github.com/username/repo"
+          index={0}
         />
         <ProjectCard
           src="/NextWebsite.png"
-          title="Modern Next js job board"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title="Modern Next.js Portfolio"
+          description="A sleek, responsive portfolio showcasing my web development projects and skills."
+          technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
+          demoLink="https://demo.com"
+          githubLink="https://github.com/username/repo"
+          index={0}
         />
       </div>
       {/* <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">

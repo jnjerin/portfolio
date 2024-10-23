@@ -32,10 +32,10 @@ const ProjectCard = ({ src, title, description, technologies, demoLink, githubLi
       />
 
       <div className="p-4">
-        {/* <h1 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-2">{title}</h1> */}
-        <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-3 font-inter tracking-tight">
+        <h1 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-2">{title}</h1>
+        {/* <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-3 font-inter tracking-tight">
           {title}
-        </h1>
+        </h1> */}
 
         <p className="text-gray-300 mb-4">{description}</p>
         

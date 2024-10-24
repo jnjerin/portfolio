@@ -28,7 +28,7 @@ const ProjectCard = ({ src, title, description, technologies, demoLink, githubLi
       hover:border-purple-500
       cursor-pointer"
     >
-      
+
       <Image
         src={src}
         alt={title}
@@ -47,9 +47,12 @@ const ProjectCard = ({ src, title, description, technologies, demoLink, githubLi
         
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech, index) => (
-            <span key={index} className="px-2 py-1 bg-[#2A0E61] text-white text-sm rounded-full hover:bg-[#3B1A82] transition-colors duration-300">
+          // <span className="px-3 py-1 bg-[#ffffff10] backdrop-blur-md border border-[#ffffff30] text-white text-sm rounded-full transition-all duration-300 hover:animate-shake">
+          //  {tech}
+          // </span>
+            <span key={index} className="px-3 py-1 border border-[#38bdf880] text-[#38bdf880] text-sm rounded-full transition-all duration-300 hover:bg-[#38bdf810] hover:border-[#38bdf8] hover:text-[#38bdf8]">
               {tech}
-            </span>
+            </span>          
           ))}
         </div>
 

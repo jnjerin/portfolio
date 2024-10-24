@@ -28,7 +28,7 @@ const Projects = () => {
           technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
           demoLink="https://demo.com"
           githubLink="https://github.com/username/repo"
-          index={0}
+          index={1}
         />
         <ProjectCard
           src="/NextWebsite.png"
@@ -37,7 +37,7 @@ const Projects = () => {
           technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
           demoLink="https://demo.com"
           githubLink="https://github.com/username/repo"
-          index={0}
+          index={2}
         />
       </div>
       {/* <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">

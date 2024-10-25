@@ -13,16 +13,17 @@ const Projects = () => {
       {/* <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10"> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-10">  
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="A sleek, responsive portfolio showcasing my web development projects and skills."
-          technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
-          demoLink="https://demo.com"
-          githubLink="https://github.com/username/repo"
+          src="/branditbg.png"
+          title="AI-Powered Marketing Copy Generator"
+          description="A cutting-edge AI-powered marketing platform that revolutionizes how businesses create their brand content. 
+          Built with Next.js and AWS serverless infrastructure, this application empowers users to generate professional brand and marketing copy instantly through OpenAI's powerful API."
+          technologies={["Next.js", "React", "Typescript", "Tailwind CSS", "Python", "OpenAI API", "AWS"]}
+          demoLink="https://brandit-beta.vercel.app/"
+          githubLink="https://github.com/jnjerin/brandit"
           index={0}
         />
         <ProjectCard
-          src="/SpaceWebsite.png"
+          src="/NextWebsite.png"
           title="Modern Next.js Portfolio"
           description="A sleek, responsive portfolio showcasing my web development projects and skills."
           technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
@@ -31,14 +32,24 @@ const Projects = () => {
           index={1}
         />
         <ProjectCard
+          src="/portfolio1.png"
+          title="Modern Next.js Portfolio"
+          description="A sleek, responsive portfolio showcasing my web development projects and skills."
+          technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
+          demoLink="https://demo.com"
+          githubLink="https://github.com/username/repo"
+          index={3}
+        />
+
+        {/* <ProjectCard
           src="/NextWebsite.png"
           title="Modern Next.js Portfolio"
           description="A sleek, responsive portfolio showcasing my web development projects and skills."
           technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
           demoLink="https://demo.com"
           githubLink="https://github.com/username/repo"
-          index={2}
-        />
+          index={4}
+        /> */}
       </div>
       {/* <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard

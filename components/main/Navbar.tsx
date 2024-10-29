@@ -66,7 +66,7 @@ const Navbar = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-gradient-to-r from-purple-600 to-cyan-500 text-white px-4 py-2 rounded-full font-semibold"
+          className="bg-gradient-to-r from-indigo-700 to-purple-700 text-white px-4 py-2 rounded-full font-semibold"
         >
           Hire Me
         </motion.button>

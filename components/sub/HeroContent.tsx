@@ -42,7 +42,7 @@ const HeroContent = () => {
                         );
                 }}
                 />
-                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 text-[40px] animate-gradient'> Crafting Digital Experiences </span>
+                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 text-[40px] animate-gradient'> Full-stack web developer  </span>
                 </span>
             </motion.div>
 

@@ -189,33 +189,34 @@ export const Backend_skill = [
     height: 80,
   },
  
-  // {
-  //   skill_name: "Python",
-  //   Image: "/express.png",
-  //   width: 80,
-  //   height: 80,
-  // },
-  // {
-  //   skill_name: "Django",
-  //   Image: "/express.png",
-  //   width: 80,
-  //   height: 80,
-  // },
-  // {
-  //   skill_name: "Flask",
-  //   Image: "/express.png",
-  //   width: 80,
-  //   height: 80,
-  // },
-  // {
-  //   skill_name: "FastAPI",
-  //   Image: "/express.png",
-  //   width: 80,
-  //   height: 80,
-  // },
+   {
+     skill_name: "Python",
+     Image: "/python.png",
+     width: 80,
+     height: 80,
+   },
+  {
+    skill_name: "Django",
+    Image: "/django.png",
+    width: 80,
+    height: 80,
+  },
+
+  {
+    skill_name: "Flask",
+    Image: "/flask1.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "FastAPI",
+    Image: "/FastAPI.png",
+    width: 80,
+    height: 80,
+  },
   {
     skill_name: "MongoDB",
-    Image: "/mongodb.png",
+    Image: "/mongoDB1.png",
     width: 80,
     height: 80,
   },
@@ -249,6 +250,12 @@ export const Backend_skill = [
   //   width: 80,
   //   height: 80,
   // },
+  // {
+  //   skill_name: "Go",
+  //   Image: "/go.png",
+  //   width: 80,
+  //   height: 80,
+  // },
 ];
 
 export const Full_stack = [
@@ -264,6 +271,9 @@ export const Full_stack = [
   //   width: 80,
   //   height: 80,
   // },
+];
+
+export const Other_skill = [
   {
     skill_name: "Docker",
     Image: "/docker.webp",
@@ -272,29 +282,52 @@ export const Full_stack = [
   },
   {
     skill_name: "Kubernetes",
-    Image: "/docker.webp",
+    Image: "/Kubernetes.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Github",
-    Image: "/docker.webp",
+    skill_name: "Git",
+    Image: "/Git.png",
     width: 80,
     height: 80,
   },
-];
-
-export const Other_skill = [
-  // {
-  //   skill_name: "Github",
-  //   Image: "/docker.webp",
-  //   width: 80,
-  //   height: 80,
-  // },
-  // {
-  //   skill_name: "Go",
-  //   Image: "/go.png",
-  //   width: 80,
-  //   height: 80,
-  // },
+  {
+    skill_name: "GitHub",
+    Image: "/githubcolor.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Jenkins",
+    Image: "/Jenkins.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Bash",
+    Image: "/bash1.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Linux",
+    Image: "/Linux.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "AWS",
+    Image: "/AWS.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Stripe",
+    Image: "/stripe.webp",
+    width: 80,
+    height: 80,
+  },
+  
+ 
 ];

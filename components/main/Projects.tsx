@@ -23,19 +23,20 @@ const Projects = () => {
           index={0}
         />
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Interactive Next.js Developer Portfolio"
-          description="A sleek, responsive portfolio showcasing my web development projects and skills."
-          technologies={["Next.js", "React", "Tailwind CSS", "Framer Motion"]}
+          src="/domovie.png"
+          title="Instant Movie Search Platform"
+          description="A sophisticated movie discovery platform powered by the TMDB API, delivering real-time movie data through an optimized architecture that separates client and server concerns and a component-based structure that ensures scalability.
+          The dark-mode enabled interface combines Tailwind's utility-first approach with Next.js server components to create a fast, responsive experience where users can explore and search through an extensive movie database with instant results.."
+          technologies={["Next.js", "React", "JavaScript", "Tailwind CSS", "TMDB API"]}
           demoLink="https://demo.com"
-          githubLink="https://github.com/username/repo"
+          githubLink="https://github.com/jnjerin/domovie"
           index={3}
         />
         <ProjectCard
           src="/portfolio1.png"
           title="Modern Next.js Portfolio with Dynamic Interactions"
           description="A modern web portfolio combining sleek design principles with dynamic interactions. Features an elegant responsive grid system with smooth animations and gradient aesthetics. 
-          Project cards showcase comprehensive details including technology stack badges, and direct links to both demos and source code  creating an engaging platform to highlight development expertise."
+          Project cards showcase comprehensive details including technology stack badges, and direct links to both demos and source code,  creating an engaging platform to highlight development expertise."
           technologies={["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]}
           demoLink="https://portfolio-joan-njeris-projects.vercel.app/"
           githubLink="https://github.com/jnjerin/portfolio"

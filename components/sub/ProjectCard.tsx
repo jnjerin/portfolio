@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
+import { useState } from "react";
 
 interface Props {
   src: string;
@@ -16,6 +17,7 @@ interface Props {
 }
 
 const ProjectCard = ({ src, title, description, technologies, demoLink, githubLink, index }: Props) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <motion.div 
       variants={index % 2 === 0 ? slideInFromLeft(index * 0.2) : slideInFromRight(index * 0.2)}
@@ -43,7 +45,17 @@ const ProjectCard = ({ src, title, description, technologies, demoLink, githubLi
           {title}
         </h1> */}
 
-        <p className="text-gray-300 mb-4 flex-grow">{description}</p>
+        <p className="text-gray-300 mb-4 flex-grow">
+          {isExpanded ? description : description.slice(0, 150)}
+          {description.length > 140 && (
+            <button 
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="ml-2 text-slate-500 hover:text-cyan-600 font-sm"
+            >
+              {isExpanded ? "See Less" : "...See More"}
+            </button>
+          )}
+        </p>
         
         <div className="mt-auto">
           <div className="flex flex-wrap gap-2 mb-4">

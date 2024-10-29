@@ -24,7 +24,7 @@ const Projects = () => {
         />
         <ProjectCard
           src="/domovie.png"
-          title="Instant Movie Search Platform"
+          title="Instant Movie Search & Discovery Platform"
           description="A sophisticated movie discovery platform powered by the TMDB API, delivering real-time movie data through an optimized architecture that separates client and server concerns and a component-based structure that ensures scalability.
           The dark-mode enabled interface combines Tailwind's utility-first approach with Next.js server components to create a fast, responsive experience where users can explore and search through an extensive movie database with instant results.."
           technologies={["Next.js", "React", "JavaScript", "Tailwind CSS", "TMDB API"]}

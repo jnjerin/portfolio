@@ -22,17 +22,21 @@ const Skills = () => {
           className="backdrop-blur-lg bg-white/5 rounded-xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300"
         >
           <div className="text-center mb-8">
-            {/* <h2 className="text-3xl font-mono font-bold text-purple-700 border-b-2 border-l-2 border-purple-800 pl-4 pb-2">
+            <div className="relative p-4">
+            <div className="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-[#E5E7EB]"></div>
+            <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-[#E5E7EB]"></div>
+            <h2 className="text-3xl font-bold text-[#9F7AEA]">Frontend Development</h2>
+            </div>
+
+          
+            {/* <h2 className="text-3xl  font-bold text-purple-700 px-6 py-2 border border-[#E5E7EB]/20 rounded-lg">
               Frontend Development
             </h2> */}
-            <h2 className="text-3xl  font-bold text-purple-700 px-6 py-2 border border-[#E5E7EB]/20 rounded-lg">
-              Frontend Development
-            </h2>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="font-mono text-md text-gray-500 mt-4 ita"
+              className="cursive text-lg text-gray-500 mt-4 ita"
             >
               Creating responsive and interactive user interfaces
             </motion.p>
@@ -58,14 +62,16 @@ const Skills = () => {
           className="backdrop-blur-lg bg-white/5 rounded-xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300"
         >
           <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-purple-700 px-6 py-2 border border-[#E5E7EB]/20 rounded-lg">
-              Backend Development
-            </h2>
+          <div className="relative p-4">
+            <div className="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-[#E5E7EB]"></div>
+            <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-[#E5E7EB]"></div>
+            <h2 className="text-3xl font-bold text-[#9F7AEA]">Backend Development</h2>
+            </div>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="font-mono text-md text-gray-500 mt-4 ita"
+              className="cursive text-lg text-gray-500 mt-4 ita"
             >
               Building robust and scalable server-side applications
             </motion.p>
@@ -91,16 +97,18 @@ const Skills = () => {
           className="backdrop-blur-lg bg-white/5 rounded-xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300"
         >
           <div className="text-center mb-8">
-          <h2 className=" text-3xl font-bold text-purple-700 px-6 py-2 border border-[#E5E7EB]/20 rounded-lg">
-              DevOps
-            </h2>
+          <div className="relative p-4">
+            <div className="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-[#E5E7EB]"></div>
+            <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-[#E5E7EB]"></div>
+            <h2 className="text-3xl font-bold text-[#9F7AEA] mt-7">DevOps</h2>
+            </div>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="font-mono text-md text-gray-500 mt-4 ita"
+              className="cursive text-lg text-gray-500 mt-4 ita"
             >
-              Bridging frontend and backend, optimizing deployment process
+              Automating and streamlining the software development lifecycle
             </motion.p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">

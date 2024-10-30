@@ -12,13 +12,15 @@ const SkillDataProvider = ({ src, width, height, index, name }) => {
       <div className="relative group">
         <Image
           src={src}
-          width={width}
-          height={height}
+          width={35}  
+          height={35} 
           alt={name}
           className="transform group-hover:rotate-12 transition-all duration-300"
         />
       </div>
-      <p className="text-gray-300 mt-3 text-sm font-medium">{name}</p>
+      <p className="text-gray-300 mt-3 text-sm font-medium text-center">
+        {name}
+      </p>
     </motion.div>
   );
 };

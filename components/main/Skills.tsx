@@ -22,11 +22,21 @@ const Skills = () => {
           className="backdrop-blur-lg bg-white/5 rounded-xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300"
         >
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 relative">
+            {/* <h2 className="text-3xl font-mono font-bold text-purple-700 border-b-2 border-l-2 border-purple-800 pl-4 pb-2">
               Frontend Development
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-purple-500 to-cyan-500"></div>
+            </h2> */}
+            <h2 className="text-3xl  font-bold text-purple-700 px-6 py-2 border border-[#E5E7EB]/20 rounded-lg">
+              Frontend Development
             </h2>
-            <p className="text-gray-400 mt-4">Creating responsive and interactive user interfaces</p>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="font-mono text-md text-gray-500 mt-4 ita"
+            >
+              Creating responsive and interactive user interfaces
+            </motion.p>
+
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {Frontend_skill.map((skill, index) => (
@@ -48,11 +58,18 @@ const Skills = () => {
           className="backdrop-blur-lg bg-white/5 rounded-xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300"
         >
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 relative">
+          <h2 className="text-3xl font-bold text-purple-700 px-6 py-2 border border-[#E5E7EB]/20 rounded-lg">
               Backend Development
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-purple-500 to-cyan-500"></div>
             </h2>
-            <p className="text-gray-400 mt-4">Building robust and scalable server-side applications</p>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="font-mono text-md text-gray-500 mt-4 ita"
+            >
+              Building robust and scalable server-side applications
+            </motion.p>
+              
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {Backend_skill.map((skill, index) => (
@@ -74,11 +91,17 @@ const Skills = () => {
           className="backdrop-blur-lg bg-white/5 rounded-xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300"
         >
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 relative">
+          <h2 className=" text-3xl font-bold text-purple-700 px-6 py-2 border border-[#E5E7EB]/20 rounded-lg">
               DevOps
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-purple-500 to-cyan-500"></div>
             </h2>
-            <p className="text-gray-400 mt-4">Bridging frontend and backend, optimizing deployment processes</p>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="font-mono text-md text-gray-500 mt-4 ita"
+            >
+              Bridging frontend and backend, optimizing deployment process
+            </motion.p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {[...Full_stack, ...Other_skill].map((skill, index) => (

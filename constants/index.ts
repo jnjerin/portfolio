@@ -73,9 +73,9 @@ export const Skill_data = [
   },
   {
     skill_name: "MongoDB",
-    Image: "/mongodb.png",
-    width: 50,
-    height: 50,
+    Image: "/mongoDB1.png",
+    width: 80,
+    height: 80,
   },
 ];
 
@@ -262,12 +262,6 @@ export const Full_stack = [
   // {
   //   skill_name: "React Native",
   //   Image: "/ReactNative .png",
-  //   width: 80,
-  //   height: 80,
-  // },
-  // {
-  //   skill_name: "Tauri",
-  //   Image: "/tauri.svg",
   //   width: 80,
   //   height: 80,
   // },

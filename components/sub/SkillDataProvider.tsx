@@ -1,51 +1,26 @@
-"use client"
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-import React from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import Image from 'next/image';
-
-interface Props {
-  src: string;
-  width: number;
-  height: number;
-  index: number;
-  name: string;
-}
-
-const SkillDataProvider = ({ src, width, height, index, name }: Props) => {
-  const { ref, inView } = useInView({
-    triggerOnce: true
-  })
-
-  const variants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 }
-  }
-
-    const animationDelay = 0.2
-    return (
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        variants={variants}
-        animate={inView ? "visible" : "hidden"}
-        custom={index}
-        transition={{ delay: index * animationDelay }}
-        className="flex flex-col items-center justify-center"
-      >
-        <div className="bg-slate-700 rounded-full px-4 py-2 text-white mb-2">
-          {name}
-        </div>
+const SkillDataProvider = ({ src, width, height, index, name }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="flex flex-col items-center justify-center p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 transform hover:scale-105"
+    >
+      <div className="relative group">
         <Image
           src={src}
-          width={55}
-          height={55}
-          alt={`${name} skill`}
-          className="mt-2 object-contain"
+          width={width}
+          height={height}
+          alt={name}
+          className="transform group-hover:rotate-12 transition-all duration-300"
         />
-      </motion.div>
-    )
-}
+      </div>
+      <p className="text-gray-300 mt-3 text-sm font-medium">{name}</p>
+    </motion.div>
+  );
+};
 
-export default SkillDataProvider
+export default SkillDataProvider;

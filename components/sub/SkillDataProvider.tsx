@@ -1,7 +1,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const SkillDataProvider = ({ src, width, height, index, name }) => {
+interface SkillDataProviderProps {
+  src: string;
+  width: number;
+  height: number;
+  index: number;
+  name: string;
+}
+
+const SkillDataProvider = ({ src, width, height, index, name }: SkillDataProviderProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}

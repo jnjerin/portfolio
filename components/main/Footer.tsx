@@ -73,7 +73,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center space-x-2 before:content-['•'] before:text-purple-500 before:mr-2">Remote/Hybrid work</li>
               <li className="flex items-center space-x-2 before:content-['•'] before:text-purple-500 before:mr-2">Full-time/Part-time opportunities</li>
-              <li className="flex items-center space-x-2 before:content-['•'] before:text-purple-500 before:mr-2">Collaborations</li>
+              <li className="flex items-center space-x-2 before:content-['•'] before:text-purple-500 before:mr-2">Open Source Projects</li>
+              <li className="flex items-center space-x-2 before:content-['•'] before:text-purple-500 before:mr-2">Project Partnerships</li>
             </ul>
           </div>
         </div>

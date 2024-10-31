@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import { slideInFromLeft, slideInFromRight } from '@/utils/motion'
-import { FaGithub, FaLinkedin, FaEnvelope, FaPaperPlane, FaDiscord, FaFileDownload } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaPaperPlane, FaFileDownload } from 'react-icons/fa'
 
 const resumeLink = {
   name: 'Resume',
@@ -20,11 +20,11 @@ const socialLinks = [
     url: 'https://linkedin.com/in/joannjerin',
     icon: <FaLinkedin className="text-white text-2xl hover:text-purple-400" />,
   },
-  {
-    name: 'Discord',
-    url: 'https://discord.com/users/yourusername',
-    icon: <FaDiscord className="text-white text-2xl hover:text-purple-400" />,
-  },
+  // {
+  //   name: 'Discord',
+  //   url: 'https://discord.com/users/yourusername',
+  //   icon: <FaDiscord className="text-white text-2xl hover:text-purple-400" />,
+  // },
 ]
 
 const Contact = () => {
@@ -99,7 +99,7 @@ const Contact = () => {
             <FaFileDownload className="text-white text-2xl transition-transform group-hover:rotate-12" />
             <span>Download Resume</span>
           </motion.a>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {socialLinks.map((social) => (
               <motion.a
                 key={social.name}

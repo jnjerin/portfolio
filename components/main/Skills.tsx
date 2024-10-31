@@ -36,7 +36,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="cursive text-lg text-gray-500 mt-4 ita"
+              className="text-md text-gray-500 mt-4 ita"
             >
               Creating responsive and interactive user interfaces
             </motion.p>
@@ -71,7 +71,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="cursive text-lg text-gray-500 mt-4 ita"
+              className="text-md text-gray-500 mt-4 ita"
             >
               Building robust and scalable server-side applications
             </motion.p>
@@ -106,7 +106,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="cursive text-lg text-gray-500 mt-4 ita"
+              className="text-md text-gray-500 mt-4 ita"
             >
               Automating and streamlining the software development lifecycle
             </motion.p>

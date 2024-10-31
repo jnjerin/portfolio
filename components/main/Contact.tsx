@@ -25,11 +25,6 @@ const socialLinks = [
     url: 'https://discord.com/users/yourusername',
     icon: <FaDiscord className="text-white text-2xl hover:text-purple-400" />,
   },
-  {
-    name: 'Email',
-    url: 'mailto:njerijoan24@gmail.com',
-    icon: <FaEnvelope className="text-white text-2xl hover:text-purple-400" />,
-  },
 ]
 
 const Contact = () => {
@@ -104,7 +99,7 @@ const Contact = () => {
             <FaFileDownload className="text-white text-2xl transition-transform group-hover:rotate-12" />
             <span>Download Resume</span>
           </motion.a>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {socialLinks.map((social) => (
               <motion.a
                 key={social.name}
@@ -112,11 +107,11 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
-                className="group flex flex-col items-center justify-center rounded-xl bg-[#1A1A1A]/40 p-4 hover:bg-[#2A0E61]/50 transition-all duration-300"
+                className="group flex flex-col items-center justify-center rounded-xl bg-[#1A1A1A]/40 p-6 hover:bg-[#2A0E61]/50 transition-all duration-300"
               >
-                <div className="relative z-10">
+                <div className="flex flex-col items-center gap-3">
                   {social.icon}
-                  <p className="mt-2 text-gray-300 text-sm font-medium">{social.name}</p>
+                  <p className="text-gray-300 text-sm font-medium">{social.name}</p>
                 </div>
               </motion.a>
             ))}

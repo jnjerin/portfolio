@@ -12,7 +12,7 @@ const ParticleBackground = () => {
 
     return (
         <Particles
-            className="absolute z-[1]"
+            className="absolute z-[1] w-full h-full"
             id="tsparticles"
             init={particlesInit}
             options={{

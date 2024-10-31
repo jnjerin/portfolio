@@ -5,7 +5,6 @@ import Image from 'next/image'
 import {motion} from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
 import ReactTypingEffect from 'react-typing-effect'
-import ParticleBackground from '../effects/ParticleBackground'
 
 const Introduction = () => {
   return (
@@ -13,9 +12,7 @@ const Introduction = () => {
     initial='hidden'
     animate='visible'
     className='min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 md:px-20 relative'
-    >
-        <ParticleBackground />
-        
+    >  
         <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-start z-10'>
             <motion.div
             variants={slideInFromLeft(0.5)}

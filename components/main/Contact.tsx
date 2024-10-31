@@ -1,7 +1,13 @@
 'use client'
 import { motion } from 'framer-motion'
 import { slideInFromLeft, slideInFromRight } from '@/utils/motion'
-import { FaGithub, FaLinkedin, FaEnvelope, FaPaperPlane, FaDiscord } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaPaperPlane, FaDiscord, FaFileDownload } from 'react-icons/fa'
+
+const resumeLink = {
+  name: 'Resume',
+  url: '/path-to-your-resume.pdf', 
+  icon: <FaFileDownload className="text-white text-2xl group-hover:text-purple-400" />,
+}
 
 const socialLinks = [
   {
@@ -88,6 +94,16 @@ const Contact = () => {
           <h3 className="text-xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             Connect With Me
           </h3>
+          <motion.a
+            href={resumeLink.url}
+            download
+            whileHover={{ scale: 1.02, boxShadow: "0 0 20px rgba(168, 85, 247, 0.4)" }}
+            whileTap={{ scale: 0.98 }}
+            className="flex items-center justify-center space-x-3 mb-8 p-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-xl text-white font-medium transition-all duration-300"
+          >
+            <FaFileDownload className="text-white text-2xl transition-transform group-hover:rotate-12" />
+            <span>Download Resume</span>
+          </motion.a>
           <div className="grid grid-cols-2 gap-4">
             {socialLinks.map((social) => (
               <motion.a

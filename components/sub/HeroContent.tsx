@@ -5,7 +5,6 @@ import Image from 'next/image'
 import {motion} from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
 import ReactTypingEffect from 'react-typing-effect'
-import ParticleBackground from '../effects/ParticleBackground'
 
 const HeroContent = () => {
   return (
@@ -14,7 +13,6 @@ const HeroContent = () => {
     animate='visible'
     className='flex flex-col lg:flex-row items-center justify-center px-4 md:px-20 mt-20 lg:mt-40 w-full z-[20] relative' 
     >
-        <ParticleBackground />
         
         <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-start'>
             <motion.div

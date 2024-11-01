@@ -1,7 +1,9 @@
 'use client'
+
 import { motion } from 'framer-motion'
 import { slideInFromLeft, slideInFromRight } from '@/utils/motion'
 import { FaGithub, FaLinkedin, FaPaperPlane, FaFileDownload } from 'react-icons/fa'
+import { useState } from 'react'
 
 const resumeLink = {
   name: 'Resume',
@@ -28,6 +30,46 @@ const socialLinks = [
 ]
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) throw new Error('Failed to send message')
+      
+      setSubmitStatus('success')
+      setFormData({ name: '', email: '', message: '' })
+    } catch (error) {
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+      setTimeout(() => setSubmitStatus('idle'), 3000)
+    }
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }))
+  }
+
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen py-20" id="contact">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0F1624]/50 pointer-events-none" />
@@ -49,39 +91,61 @@ const Contact = () => {
           variants={slideInFromLeft(0.5)}
           className="backdrop-blur-lg bg-[#0F1624]/40 p-8 rounded-2xl border border-[#2A0E61]/50 shadow-xl"
         >
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
               <label className="text-gray-300 text-sm">Your Name</label>
               <input
+                name="name"
                 type="text"
+                required
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg bg-[#1A1A1A]/40 border border-[#2A0E61]/50 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition-all outline-none text-white"
               />
             </div>
             <div className="space-y-2">
               <label className="text-gray-300 text-sm">Email Address</label>
               <input
+                name="email"
                 type="email"
+                required
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg bg-[#1A1A1A]/40 border border-[#2A0E61]/50 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition-all outline-none text-white"
               />
             </div>
             <div className="space-y-2">
               <label className="text-gray-300 text-sm">Message</label>
               <textarea
+                name="message"
                 rows={4}
+                required
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg bg-[#1A1A1A]/40 border border-[#2A0E61]/50 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition-all outline-none text-white"
               />
             </div>
             <motion.button
+              type="submit"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-4 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-lg flex items-center justify-center space-x-2 hover:opacity-90 transition-all"
+              disabled={isSubmitting}
+              className={`w-full py-4 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-lg flex items-center justify-center space-x-2 transition-all ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:opacity-90'}`}
             >
-              <span>Send Message</span>
-              <FaPaperPlane className="text-sm" />
+              <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+              <FaPaperPlane className={`text-sm ${isSubmitting ? 'animate-bounce' : ''}`} />
             </motion.button>
+
+            {submitStatus === 'success' && (
+              <p className="text-green-500 text-center">Message sent successfully!</p>
+            )}
+            {submitStatus === 'error' && (
+              <p className="text-red-500 text-center">Failed to send message. Please try again.</p>
+            )}
           </form>
         </motion.div>
 
+         {/* Social links section    */}
         <motion.div
           variants={slideInFromRight(0.5)}
           className="backdrop-blur-lg bg-[#0F1624]/40 p-6 rounded-2xl border border-[#2A0E61]/50 shadow-xl h-fit"

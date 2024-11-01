@@ -37,7 +37,7 @@ const Projects = () => {
           title="Modern Next.js Portfolio with Dynamic Interactions"
           description="A modern web portfolio combining sleek design principles with dynamic interactions. Features an elegant responsive grid system with smooth animations and gradient aesthetics. 
           Project cards showcase comprehensive details including technology stack badges, and direct links to both demos and source code,  creating an engaging platform to highlight development expertise."
-          technologies={["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]}
+          technologies={["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Resend API"]}
           demoLink="https://portfolio-joan-njeris-projects.vercel.app/"
           githubLink="https://github.com/jnjerin/portfolio"
           index={1}

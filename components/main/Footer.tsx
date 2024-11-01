@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Connect Section */}
           <div className="backdrop-blur-sm bg-[#1A2333]/30 p-5 rounded-xl border border-gray-800/50 hover:transform hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300">
-            <h3 className="text-lg font-bold mb-4 text-white">Let's Connect</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Let&apos;s Connect</h3>
             <div className="space-y-3">
               <Link href="https://github.com/jnjerin" 
                 className="flex items-center group hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:translate-x-2">

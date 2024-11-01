@@ -3,6 +3,12 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Test that the env variable is working
+const apiKey = process.env.RESEND_API_KEY
+if (!apiKey) {
+  throw new Error('RESEND_API_KEY is not defined')
+}
+
 export async function POST(req: Request) {
   const { name, email, message } = await req.json();
   

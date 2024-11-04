@@ -61,7 +61,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                <span className="text-sm">UTC+3</span>
+                <span className="text-sm">EAT (UTC+3)</span>
               </div>
               <p className="text-gray-400">📍 Nairobi, Kenya</p>
             </div>

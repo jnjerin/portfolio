@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 const resumeLink = {
   name: 'Resume',
-  url: '/path-to-your-resume.pdf', 
+  url: '/resume/JoanNdegwa_Resume.pdf', 
   icon: <FaFileDownload className="text-white text-2xl group-hover:text-purple-400" />,
 }
 
@@ -160,6 +160,7 @@ const Contact = () => {
             whileTap={{ scale: 0.98 }}
             className="flex items-center justify-center space-x-3 mb-8 p-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-xl text-white font-medium transition-all duration-300"
           >
+                       
             <FaFileDownload className="text-white text-2xl transition-transform group-hover:rotate-12" />
             <span>Download Resume</span>
           </motion.a>

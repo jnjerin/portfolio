@@ -28,7 +28,7 @@ const Projects = () => {
           description="A sophisticated movie discovery platform powered by the TMDB API, delivering real-time movie data through an optimized architecture that separates client and server concerns and a component-based structure that ensures scalability.
           The dark-mode enabled interface combines Tailwind's utility-first approach with Next.js server components to create a fast, responsive experience where users can explore and search through an extensive movie database with instant results.."
           technologies={["Next.js", "React", "JavaScript", "Tailwind CSS", "TMDB API"]}
-          demoLink="https://demo.com"
+          demoLink="https://domovie-beta.vercel.app/"
           githubLink="https://github.com/jnjerin/domovie"
           index={3}
         />

@@ -39,11 +39,16 @@ const Navbar = () => {
           scrolled ? "bg-[#03001417]" : "bg-transparent"
         }`}
       >
-        <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-          <a href="#about me" className="h-auto w-auto flex flex-row items-center">
-            <span className="font-bold ml-[100px] hidden md:block text-gray-300 text-xl">
-              Joan Njeri Ndegwa
-            </span>
+        <div className="w-auto h-full flex flex-row items-center justify-between m-auto px-[10px]">
+          <a href="#home" className="h-full w-auto flex flex-row items-center">
+            <Image 
+              src="/joanlogo5.png"
+              alt="Joan Logo"
+              width={150}
+              height={150}
+              className="ml-[100px] cursor-pointer hover:animate-slowspin object-contain"
+              priority
+            />
           </a>
 
           <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">

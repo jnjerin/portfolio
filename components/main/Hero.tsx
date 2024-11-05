@@ -4,7 +4,7 @@ import AboutMe from '@/components/sub/AboutMe'
 
 export const Hero = () => {
   return (
-    <div className='relative flex flex-col h-full w-full'>
+    <div className='relative flex flex-col h-full w-full' id="home">
         <Introduction />
         <AboutMe />
     </div>

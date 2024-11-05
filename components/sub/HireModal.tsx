@@ -20,14 +20,6 @@ const HireModal = ({ isOpen, onClose }: HireModalProps) => {
         exit={{ opacity: 0 }}
         onClick={onClose}
       >
-        {/* <motion.div 
-          className="bg-[#0300145e] p-8 rounded-xl border border-[#7042f861] backdrop-blur-md w-[90%] max-w-[500px]"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0.8, opacity: 0 }}
-          onClick={e => e.stopPropagation()}
-          
-        > */}
         <motion.div 
           className="bg-gradient-to-b from-[#0F0728] to-[#1A0B3E] p-8 rounded-2xl border border-[#7042f861] w-[90%] max-w-[500px] shadow-xl shadow-purple-500/20 relative"
           initial={{ scale: 0.8, opacity: 0, y: 20 }}
@@ -36,27 +28,27 @@ const HireModal = ({ isOpen, onClose }: HireModalProps) => {
           onClick={e => e.stopPropagation()}
         >
             <button
-            onClick={onClose}
-            className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"         
+              onClick={onClose}
+              className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"         
             >
                 <motion.div
                   whileHover={{ rotate: 90, scale: 1.1 }}
                   transition={{ duration: 0.2 }}
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M6 18L18 6M6 6l12 12"
-                        />
-                    </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
                 </motion.div>
             </button>
           <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 mb-6">Connect with me!</h2>

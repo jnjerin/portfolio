@@ -11,7 +11,8 @@ const Introduction = () => {
     <motion.div
     initial='hidden'
     animate='visible'
-    className='min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 md:px-20 relative'
+    className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 md:px-20 relative" 
+    id="introduction"
     >  
         <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-start z-10'>
             <motion.div

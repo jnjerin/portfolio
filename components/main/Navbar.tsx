@@ -66,12 +66,24 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          
+
           <motion.button
+            animate={{ 
+              y: [0, -4, 0],
+            }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            transition={{
+              y: {
+                duration: 2.5,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }
+            }}
             onClick={() => setIsModalOpen(true)}
-            className="bg-gradient-to-r from-indigo-700 to-purple-700 text-white px-4 py-2 rounded-full font-semibold"
+            className="relative bg-gradient-to-r from-indigo-700 to-purple-700 text-white px-4 py-2 rounded-full font-semibold
+              before:absolute before:inset-0 before:-z-10 before:rounded-full before:bg-gradient-to-r before:from-indigo-700 before:to-purple-700
+              before:animate-pulse before:opacity-70 before:scale-110"
           >
             Hire Me
           </motion.button>

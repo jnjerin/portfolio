@@ -6,7 +6,7 @@ import { slideInFromLeft } from '@/utils/motion'
 
 const AboutMe = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center relative">
+    <div className="min-h-screen flex items-center justify-center relative" id="about me">
         <div className="max-w-4xl px-4 py-8">
             <motion.div
                 initial="hidden"

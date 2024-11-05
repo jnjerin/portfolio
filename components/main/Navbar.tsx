@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="w-auto h-full flex flex-row items-center justify-between m-auto px-[10px]">
           <a href="#home" className="h-full w-auto flex flex-row items-center">
             <Image 
-              src="/joanlogo5.png"
+              src="/joanlogo.png"
               alt="Joan Logo"
               width={150}
               height={150}

@@ -46,6 +46,22 @@ const Introduction = () => {
                 responsive web applications, developing robust software systems, and implementing 
                 efficient development practices.
             </motion.p>
+            <motion.div 
+                variants={slideInFromLeft(1.0)}
+                className="flex flex-wrap gap-4 mt-8">
+                    <a 
+                        href="#contact" 
+                        className="px-8 py-4 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-xl font-bold text-white shadow-[0_0_20px_rgba(147,51,234,0.5)] hover:scale-105 transition-all duration-300"
+                    >
+                        Let&apos;s Connect
+                    </a>
+                    <a 
+                        href="/resume/JoanNdegwa_Resume.pdf" 
+                        className="px-8 py-4 border border-purple-500 rounded-xl font-bold text-white hover:scale-105 transition-all duration-300 hover:border-cyan-400"
+                    >
+                        View Resume
+                    </a>
+            </motion.div>
         </div>
 
         <motion.div

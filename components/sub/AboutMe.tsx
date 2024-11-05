@@ -53,6 +53,26 @@ const AboutMe = () => {
                         real-world challenges.
                     </p>
                 </motion.div>
+            </motion.div>               
+            <motion.div 
+            variants={slideInFromLeft(1.1)}
+            className="flex justify-center mt-16">
+                <a 
+                    href="#skills" 
+                    className="group flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-purple-500/10 to-cyan-400/10 hover:from-purple-500/20 hover:to-cyan-400/20 transition-all duration-300"
+                >
+                    <span className="text-l font-semibold bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">
+                        Explore My Skills & Projects
+                    </span>
+                    <svg 
+                        className="w-6 h-6 text-cyan-400 group-hover:translate-y-1 transition-transform duration-300" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                    >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </a>
             </motion.div>
         </div>
     </div>

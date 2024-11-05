@@ -33,7 +33,7 @@ const Projects = () => {
           index={3}
         />
         <ProjectCard
-          src="/portfolio1.png"
+          src="/portfolionew.png"
           title="Modern Next.js Portfolio with Dynamic Interactions"
           description="A modern web portfolio combining sleek design principles with dynamic interactions. Features an elegant responsive grid system with smooth animations and gradient aesthetics. 
           Project cards showcase comprehensive details including technology stack badges, and direct links to both demos and source code,  creating an engaging platform to highlight development expertise."

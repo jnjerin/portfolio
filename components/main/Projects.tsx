@@ -32,7 +32,7 @@ const Projects = () => {
           githubLink="https://github.com/jnjerin/domovie"
           index={3}
         />
-        <ProjectCard
+        <ProjectCard 
           src="/portfolionew.png"
           title="Modern Next.js Portfolio with Dynamic Interactions"
           description="A modern web portfolio combining sleek design principles with dynamic interactions. Features an elegant responsive grid system with smooth animations and gradient aesthetics. 

@@ -183,6 +183,12 @@ export const Backend_skill = [
     height: 80,
   },
   {
+    skill_name: "Next.js",
+    Image: "/next.png",
+    width: 80,
+    height: 80,
+  },
+  {
     skill_name: "Express",
     Image: "/express.png",
     width: 80,
